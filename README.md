@@ -1,4 +1,4 @@
-**Demo Link :**
+**Demo Link :** [text](https://frolicking-dieffenbachia-28b5c4.netlify.app/)
 
 cd ../frontend
 
@@ -6,3 +6,5 @@ cd ../frontend
 npm install
 npm run dev
 ```
+
+**Demo Video :**
