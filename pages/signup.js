@@ -21,7 +21,7 @@ export default function Signup() {
     }
 
     try {
-      await axios.post(`${BASE_URL}/auth/signup`, formData, {
+      await axios.post(`${BASE_URL}/api/auth/signup`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       router.push("/login");
