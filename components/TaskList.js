@@ -48,6 +48,11 @@ export default function TaskList({ tasks, updateTask, deleteTask, user }) {
               )}
             </div>
           ))}
+        {tasks?.length === 0 && (
+          <div className="text-gray-500 text-center text-lg p-4">
+            No tasks available. Please add a task.
+          </div>
+        )}
       </div>
     </>
   );
