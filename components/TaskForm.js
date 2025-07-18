@@ -8,8 +8,8 @@ export default function TaskForm({ addTask }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim()) return alert("Title is required");
-    if (title.trim()?.length > 150)
-      return alert("Title should be less than 150 characters");
+    if (title.trim()?.length > 200)
+      return alert("Title should be less than 200 characters");
     if (description.trim()?.length > 500)
       return alert("Description should be less than 500 characters");
     addTask({ title, description, status });
