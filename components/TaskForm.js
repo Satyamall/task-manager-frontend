@@ -8,6 +8,10 @@ export default function TaskForm({ addTask }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim()) return alert("Title is required");
+    if (title.trim()?.length > 150)
+      return alert("Title should be less than 150 characters");
+    if (description.trim()?.length > 500)
+      return alert("Description should be less than 500 characters");
     addTask({ title, description, status });
     setTitle("");
     setDescription("");
@@ -22,6 +26,7 @@ export default function TaskForm({ addTask }) {
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Task Title"
         className="w-full p-2 border rounded"
+        limit="150"
       />
       <textarea
         value={description}
