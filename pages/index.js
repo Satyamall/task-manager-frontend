@@ -94,7 +94,7 @@ export default function Home() {
             Welcome, {user.username} ({user.role})
           </span>
           <img
-            src={user.avatar || "/default-avatar.png"}
+            src={user.avatar_url || "/default-avatar.png"}
             alt="User Avatar"
             className="w-8 h-8 rounded-full ml-2 inline-block"
           />
